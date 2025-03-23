@@ -1,6 +1,6 @@
 # Obsidian Index Service
 
-This service monitors an Obsidian vault directory and indexes Markdown files—metadata *and* full content—into an SQLite database. I built it to work with my `mcp-server` project, but switched to the Obsidian plugin API instead. I still see use for this as an agnostic note indexer or sync tool (see note under "Future Steps"), so I'm putting it up here.
+This service monitors an Obsidian vault directory and indexes Markdown files—metadata *and* full content—into an SQLite database. I built it to work with my `mcp-server` project, but switched to an implementation that uses the Obsidian plugin API instead. I still see use for this as an agnostic note indexer or sync tool (see note under "Future Steps"), so I'm putting it up here.
 
 ## Functionality
 
@@ -58,7 +58,8 @@ It tracks file changes (create, modify, delete) in an Obsidian vault and stores 
      ```
 
 ### Running Locally
-Set environment variables:```bash
+Set environment variables:
+```bash
 export OBSIDIAN_VAULT_PATH=/path/to/vault
 export DB_PATH=/path/to/notes.sqlite
 ```

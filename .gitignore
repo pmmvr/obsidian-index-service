@@ -1,0 +1,37 @@
+# Python Artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.so
+dist/
+build/
+wheels/
+
+# SQLite Databases
+*.sqlite
+*.sqlite-journal
+*.db
+
+# Environment and Configuration
+.env
+
+# Temporary Files
+*.tmp
+*.swp
+*~
+
+# Virtual Environments
+.venv/
+
+# Neovim specific
+Session.vim
+Sessionx.vim
+
+# OS-Specific Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Project-Specific Exclusions
+/data/  

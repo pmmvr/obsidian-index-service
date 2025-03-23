@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  obsidian-index-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ${OBSIDIAN_VAULT_PATH:-./example-vault}:/vault:ro
+      - ${DB_VOLUME_PATH:-./data}:/data
+    restart: unless-stopped
+    environment:
+      - OBSIDIAN_VAULT_PATH=/vault
+      - DB_PATH=/data/notes.sqlite 
